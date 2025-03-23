@@ -1,0 +1,8 @@
+package: distributed_scheduler_sdk_v1
+output: client.gen.go
+generate:
+  models: true
+  client: true
+output-options:
+  # to make sure that all types are generated
+  skip-prune: true
