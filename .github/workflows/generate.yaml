@@ -1,4 +1,4 @@
-name: "Validate OpenAPI specification"
+name: "Validate and generate"
 on:
   push:
     branches:
