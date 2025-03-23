@@ -2,7 +2,7 @@ openapi: 3.0.1
 info:
   title: Scheduler management API
   description: This is scheduler management API server. Use this API to manage jobs.
-  contact: {}
+  contact: { }
   version: "1.0"
 servers:
   - url: //http://localhost:8000/v1
@@ -31,6 +31,8 @@ paths:
           explode: false
           schema:
             type: array
+            items:
+              type: string
       responses:
         "200":
           description: OK
@@ -170,7 +172,7 @@ paths:
       responses:
         "204":
           description: No Content
-          content: {}
+          content: { }
         "400":
           description: Bad Request
           content:
