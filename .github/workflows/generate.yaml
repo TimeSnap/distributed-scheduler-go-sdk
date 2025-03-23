@@ -5,13 +5,13 @@ on:
       - main
     tags:
       - v*
-    paths-ignore:
-      - "**.md"
+    paths:
+      - openapi.yaml
 
   pull_request:
     types: [ opened, synchronize ]
-    paths-ignore:
-      - "**.md"
+    paths:
+      - openapi.yaml
 
   workflow_dispatch:
 jobs:
